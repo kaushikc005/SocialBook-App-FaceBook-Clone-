@@ -14,6 +14,9 @@ body{
     justify-content: space-between;
     align-items: center;
     padding:0.2rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .logo{
     width: 10vw;
@@ -67,4 +70,66 @@ body{
     border-radius: 50%;
     margin-right: 2vw;
     padding-top: 0.1vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    
+    padding:5% 2%;
+}
+
+.sideBarLeft{
+    display: inline-block;
+    flex-basis: 25%;
+    position: sticky;
+    top:70px;
+    align-self: flex-start;
+    height: 100vh;
+}
+
+.impLinks a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    width: fit-content;
+    color: #626262;
+    
+}
+
+.impLinks{
+    border-bottom: 1px solid lightgrey;
+}
+.impLinks a img{
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+#seemore{
+    color: #1876f2;
+}
+
+.shortcutLinks a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #626262;
+    margin-bottom: 2vh;
+}
+
+.shortcutLinks p{
+    color: #626262;
+    margin: 3vh 0;
+}
+.shortcutLinks a img{
+    width: 5rem;
+    margin-right: 1.25rem;
+    border-radius: 5px;
+}
+.mainContent{
+    flex-basis: 46%;
+}
+.sideBarRight{
+    flex-basis: 25%;
 }
