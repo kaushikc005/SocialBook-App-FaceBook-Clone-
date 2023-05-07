@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>SocialBook : Your way to Social!</title>
 </head>
 <body>
@@ -24,8 +25,8 @@
                     <img src="./images/search.png" alt="search-icon" class="searchLogo">
                     <input class="searchInput" type="text" placeholder="Search" />
                 </div>
-                <div>
-                    <img src="./images/profile-pic.png" alt="profile" class="userProfile">
+                <div class="userProfile online">
+                    <img src="./images/profile-pic.png" alt="profile">
                 </div>
         </div>
     </nav>
@@ -55,10 +56,104 @@
         </div>
 
         <!-- Main Content -->
-        <div class="mainContent"></div>
+        <div class="mainContent">
+            <div class="stories">
+                <div class="story story1">
+                    <img src="./images/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+            
+                <div class="story story2">
+                    <img src="./images/member-1.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story3">
+                    <img src="./images/member-2.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story4">
+                    <img src="./images/member-3.png" alt="">
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="./images/member-4.png" alt="">
+                    <p>Post Story</p>
+                </div>
+            </div>
+
+        </div>
 
         <!-- Right Sidebar -->
         <div class="sideBarRight">
+
+            <div class="sideBarTitle">
+                <h3>Events</h3>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="events">
+                <div class="leftColumn">
+                    <h4>7th</h4>
+                    <span>May</span>
+                </div>
+                <div class="rightColumn">
+                    <h4>Meet up</h4>
+                    <p><i class="fa-solid fa-location-dot" style="color: #1876f2;"></i>Jio Garden</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+            <div class="events">
+                <div class="leftColumn">
+                    <h4>10th</h4>
+                    <span>June</span>
+                </div>
+                <div class="rightColumn">
+                    <h4>Jam Session</h4>
+
+                    <p><i class="fa-solid fa-location-dot" style="color: #1876f2;"></i>ABC Hall</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+
+            <div class="sideBarTitle">
+                <h3>Advertisement</h3>
+                <a href="#">Close</a>
+            </div>
+
+            <img src="./images/advertisement.png" class="sidebarAds" alt="">
+
+            <div class="sideBarTitle">
+                <h3>Conversations</h3>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="onlineList">
+                <div class="online">
+                    <img src="./images/member-1.png" alt="">
+                </div>
+                <p>Member 1</p>
+            </div>
+            <div class="onlineList">
+                <div class="online">
+                    <img src="./images/member-2.png" alt="">
+                </div>
+                <p>Member 2</p>
+            </div>
+            <div class="onlineList">
+                <div class="online">
+                    <img src="./images/member-3.png" alt="">
+                </div>
+                <p>Member 3</p>
+            </div>
+            <div class="onlineList">
+                <div class="online">
+                    <img src="./images/member-4.png" alt="">
+                </div>
+                <p>Member 4</p>
+            </div>
         </div>
     </div>
 
