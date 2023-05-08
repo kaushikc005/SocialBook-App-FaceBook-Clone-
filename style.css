@@ -139,9 +139,10 @@ body{
     margin: 3vh 0;
 }
 .shortcutLinks a img{
-    width: 5rem;
+    width: 50px;
     margin-right: 1.25rem;
     border-radius: 5px;
+    
 }
 .mainContent{
     flex-basis: 46%;
@@ -303,3 +304,134 @@ padding-bottom: 2rem;
     bottom: 15%;
     transform:translateX(-50%)
 }
+
+.writePostSection{
+    background-color: white;
+    margin-top:2rem;
+    padding:2vh;
+}
+.userWritePost{
+    display: flex;
+    align-items: center;
+    
+    
+    padding:0 0.75rem;
+    font-size: 16px;
+}
+
+.userWritePost img{
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.inputWritePost{
+    flex-shrink: 0;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+.inputWritePost textarea{
+    width: 100%;
+    border: 0;
+    resize: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.addPostIcons{
+    display: flex;
+    align-items: center;
+    margin-top:20px ;
+    margin-left: 70px;
+}
+
+.addPostIcons a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 30px;
+    color: #626262;
+    
+}
+
+.addPostIcons a img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.postContainer{
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    color: #626262;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.postText{
+    margin-top: 10px;
+    color: #9a9a9a;
+    font-size: 16px;
+}
+
+.postImg{
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.postRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.activityIcons{
+    display: flex;
+    align-items: center;
+}
+
+.activityIcons div{
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+.activityIcons img{
+    width: 18px;
+    margin-right: 7px;
+}
+.postProfileIcons {
+    display:flex;
+    align-items: center;
+    position: relative;
+    margin-right: 10px;
+}
+.postProfileIcons img{
+    width: 28px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+.postProfileIcons i{
+    align-items: center;
+    position: absolute;
+    top: 5px;
+   
+}
+
+.elepsisIcon{
+margin-left: auto;
+}
+
+.loadMoreBtn{
+    cursor: pointer;
+    background-color: transparent;
+   display: block;
+   border: 1px solid #9a9a9a;
+   margin: auto;
+   padding:10px 16px;
+   margin-top: 15px;
+   border-radius: 5px;
+}
+
