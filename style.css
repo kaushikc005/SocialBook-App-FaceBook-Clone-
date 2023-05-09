@@ -20,6 +20,9 @@
 body{
     background: var(--body-color);
     transition: background 0.5s;
+    width: 100vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -28,14 +31,16 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0.2rem 2rem;
+    padding: 20px;
     position: sticky;
     top: 0;
     z-index: 100;
+    
 }
 .logo{
-    width: 10vw;
+    width: 140px;
     margin-right:4rem;
+    cursor: pointer;
 }
 
 .navLeft,.navRight{
@@ -53,6 +58,7 @@ body{
 .navList li img{
     width: 2rem;
     margin-right:2.5rem;
+    cursor: pointer;
     
 }
 
@@ -110,10 +116,10 @@ body{
     top:110%;
     right: 2%;
     background: var(--post-color);
-    width: 100%;
-    max-width: 25vw;
+    width: 350px;
     display: none;
     overflow: hidden;
+    padding: 10px;
     border-radius: 5px;
     color: var(--text-color);
 }
@@ -307,7 +313,7 @@ body{
     overflow: hidden;
     text-align: center;
     width: 5vw;
-    height: 10vh;
+    height: 12vh;
 
 }
 
@@ -451,7 +457,9 @@ padding-bottom: 2rem;
     background: transparent;
     outline: none;
     border-bottom: 1px solid #ccc;
+    color: var(--text-color);
 }
+
 
 .addPostIcons{
     display: flex;
@@ -546,11 +554,380 @@ margin-left: auto;
    padding:10px 16px;
    margin-top: 15px;
    border-radius: 5px;
+   color: var(--text-color);
+}
+
+.loadMoreBtn:hover{
+    background-color: #1876f2;
 }
 
 .footer{
-    text-align: center;
+    
     color: #626262;
     padding-block:  16px;
     padding-left: 16px;
+    text-align: center;
+   
 }
+
+
+/* Profile Section */
+
+.profileContainer{
+    padding: 2vh 16vw;
+    margin-bottom: 10px;
+    
+}
+.profileDetails{
+    background-color:var(--post-color);
+    margin-top: 2vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.coverImg{
+ width: 100%;
+ border-radius: 5px;
+}
+
+.profileDetailRow{
+    display: flex;
+    align-items: flex-start;
+}
+
+.profileDetailimg{
+    width: 120px;
+    border-radius: 5px;
+    margin-right: 2vw;
+
+}
+.profileDetailRow div{
+    
+    color: var(--text-color);
+    
+}
+.profileDetailRow div h3{
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+
+.profileDetailRow div img{
+    width: 40px;
+    border-radius: 50%;
+    margin-top:1vh;
+    margin-right: 0.2vw;
+}
+
+.profileDetailRight{
+    text-align: right;
+}
+.profileDetailRight button{
+    
+background-color: #1876f2;
+border-radius: 5px;
+padding: 8px 15px;
+margin-left: 8px;
+display: inline-flex;
+align-items: center;
+cursor: pointer;
+border: 0;
+outline: 0;
+color: #fff;
+}
+
+.profileDetailRight button:first-child{
+    background-color: #e4e6eb;
+    color: #000;
+}
+.profileDetailRight button img{
+    height: 20px;
+    padding-right: 5px;
+}
+
+.profileDetailRight a{
+    background-color: #ccc;
+    padding: 5px 4px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-flex;
+    justify-content: center;
+}
+.profileDetailRight a img{
+    width: 30px;
+    height: 8px;
+}
+
+.profileContent{
+    display: flex;
+}
+.profileLeft{
+    flex-basis: 35%;
+    background-color: var(--post-color);
+    margin-top: 2rem;
+    margin-right: 15px;
+    height: fit-content;
+}
+.profileIntro{
+    color: var(--text-color);
+    margin-bottom: 10px;
+    padding: 12px;
+}
+
+.profileIntro p{
+    margin: 5px;
+    text-align: center;
+}
+.profileIntro img{
+    margin-bottom:-5px ;
+    width: 20px;
+}
+.profileInfo ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color:#626262;
+}
+.profileInfo ul li img{
+    width: 30px;
+    margin-right:10px ;
+}
+
+.profileLeft hr{
+    width: 80%;
+    margin:1vh 2vw;
+    height: 1px;
+    
+    color: #ccc;
+}
+.profileRight{
+    flex-basis: 65%;
+}
+
+.photoBox{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.photoBoxTitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+.photoBoxTitle h3{
+    color: #626262;
+}
+.photoBoxTitle a{
+    text-decoration: none;
+    color: #1876f2;
+
+}
+.photoBox div img{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.friendList{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+.friendList a{
+    text-decoration: none;
+    color: #1876f2;
+}
+
+.friendListBox{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+.friendListBox div img{
+    width: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+
+/* Media query */
+
+@media (max-width:900px){
+    nav{
+        flex-wrap: wrap;
+        padding: 10px;
+    
+    }
+    .searchBox{
+        display: none;
+    }
+    .logo{
+        width: 80px;
+        margin-right: 1rem;
+    }
+    .navLeft, .navRight{
+        flex-wrap: wrap;
+    }
+    .navList li img{
+        width: 1.5rem;
+        margin-right: 2rem;
+    }
+    .navProfile img{
+        width: 35px;
+    }
+    .online::after{
+        width: 7px;
+        height: 7px;
+    }
+    .settingsMenu{
+        width: 380px;
+    }
+    .sideBarLeft,.sideBarRight{
+        display: none;
+    }
+    .mainContent{
+        padding: 0;
+    }
+    .stories{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .story{
+        width: 20px;
+        height: 150px;
+    }
+    .story img{
+        width: 25px;
+    }
+    .story p{
+        margin-top: 20px;
+        font-size: 10px;
+        padding: 0 5px;
+    }
+    .story.story1 img{
+        bottom: 22%;
+    }
+    .mainContent{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        padding: 5px 10px;
+    }
+    .userProfile{
+        padding-left: 0;
+    }
+    .inputWritePost{
+        padding-left: 0;
+    }
+    .userProfile div p{
+        font-size: 16px;
+    }
+    .userProfile div small{
+        font-size: 12px;
+
+    }
+    .addPostIcons{
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    .addPostIcons a{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .addPostIcons a img{
+        width: 18px;
+        margin-right: 4px;
+    }
+
+    .loadMoreBtn:hover{
+        background-color: #1876f2;
+    }
+
+    .footer{
+        flex-wrap: nowrap;
+    }
+}
+
+
+/* Profile Section Media Query */
+
+@media (max-width:900px)
+{
+    .coverImg{
+        width: 98%;
+        flex-wrap: wrap;
+        
+    }
+    
+    .profileContainer{
+        padding:20px 10px;
+      
+        
+       
+    }
+    .profileContent{
+        flex-basis: 100%;
+    }
+        
+    .profileDetails
+    {
+        flex-wrap: wrap;
+    }
+
+    .mutualFriendsImg{
+        display: flex;
+    }
+    .profileDetailRow div img{
+        width: 30px;
+    }
+    .profileDetailRight{
+        margin-top: 20px;
+        text-align:start;
+    }
+    .profileDetailRight button{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .profileContent{
+        flex-wrap: wrap;
+    }
+    .profileLeft{
+        margin-right: 0;
+    }
+    .profileLeft hr{
+        width: 90%;
+        margin-left: 20px;
+        height: 1px;
+        
+        color: #ccc;
+    }
+    .profileRight,.profileLeft{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .photoBox{
+        
+        padding: 0 8px;
+       flex-wrap: wrap;
+       flex-basis: 100%;
+    }
+    .photoBox div img{
+        width: 80px;
+    }
+    .friendListBox div img{
+        width: 80px;
+    }
+   
+    .photoBoxTitle{
+        padding: 10px 0;
+    }
+  
+}
+
