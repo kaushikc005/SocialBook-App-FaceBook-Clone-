@@ -32,4 +32,13 @@ Clone the project
 
 Go to the project directory and open the index.html in any web browser.
 
+## Screenshots
+
+![App Screenshot](https://github.com/kaushikc005/SocialBook_Static-FaceBook-Landing-Page-Clone-/blob/main/images/output_screenshots/Screenshot%201.png?raw=true)
+##
+
+![App Screenshot](https://github.com/kaushikc005/SocialBook_Static-FaceBook-Landing-Page-Clone-/blob/main/images/output_screenshots/Screenshot%202.png?raw=true)
+
+##
+![App Screenshot](https://github.com/kaushikc005/SocialBook_Static-FaceBook-Landing-Page-Clone-/blob/main/images/output_screenshots/Screenshot%203.png?raw=true)
 
