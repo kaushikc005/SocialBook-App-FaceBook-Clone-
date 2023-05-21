@@ -17,6 +17,8 @@
     --post-color:black;
     --text-color:#fff;
 }
+
+
 body{
     background: var(--body-color);
     transition: background 0.5s;
@@ -35,14 +37,16 @@ body{
     position: sticky;
     height: fit-content;
     top: 0;
-    z-index: 100;
-    
+    z-index: 100; 
 }
+
+
 .logo{
     width: 140px;
     margin-right:4rem;
     cursor: pointer;
 }
+
 
 .navLeft,.navRight{
     display: flex;
@@ -52,9 +56,9 @@ body{
 
 .navList li{
     list-style: none;
-    display: inline-block;
-    
+    display: inline-block; 
 }
+
 
 .navList li img{
     width: 2rem;
@@ -62,12 +66,14 @@ body{
     cursor: pointer;
     
 }
+.navList li img:hover{
+    border-bottom: 1px solid #fff;
+}
+
 
 .searchBox{
-
     display: flex;
     background-color: #efefef;
-    
     align-items: center;
     width: 20vw;
     border-radius: 2vw;
@@ -77,8 +83,8 @@ body{
 
 .searchLogo{
     margin-right: 1.5rem;
-  
 }
+
 
 .searchInput{
     background-color: transparent;
@@ -470,13 +476,13 @@ padding-bottom: 2rem;
     margin-left: 70px;
 }
 
+
 .addPostIcons a{
     display: flex;
     align-items: center;
     text-decoration: none;
     margin-right: 30px;
     color: #626262;
-    
 }
 
 .addPostIcons a img{
@@ -491,7 +497,7 @@ padding-bottom: 2rem;
     color: #626262;
     padding: 10px;
     border-radius: 5px;
-    
+
 }
 
 .postText{
@@ -561,6 +567,7 @@ margin-left: auto;
 
 .loadMoreBtn:hover{
     background-color: #1876f2;
+    color:#fff;
 }
 
 .footer{
