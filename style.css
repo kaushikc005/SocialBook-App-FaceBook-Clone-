@@ -31,8 +31,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     position: sticky;
+    height: fit-content;
     top: 0;
     z-index: 100;
     
@@ -95,6 +96,7 @@ body{
 }
 .online{
     position: relative;
+    margin-right: 1.5rem;
 }
 
 .online::after{
@@ -245,12 +247,12 @@ body{
     align-items: center;
     text-decoration: none;
     color: #626262;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
 }
 
 .shortcutLinks p{
     color: #626262;
-    margin: 3vh 0;
+    margin: 10px 0;
 }
 .shortcutLinks a img{
     width: 50px;
@@ -860,24 +862,22 @@ color: #fff;
 
 @media (max-width:800px)
 {
-
     body{
         overflow-x: hidden;
     }
 
-    .navbar{
-        width: 100%;
-    }
+   
 
     .navProfile > img{
         margin-left: 10px;
     }
-    .navList li img{
-        margin-right: 1.5rem;
-    }
-    .online{
-        margin-right: 40px;
-    }
+   
+    .navList li img {
+        margin-right: 5vw;
+      }
+      .online {
+        margin-right: 1rem;
+      }
     .darkModeOn span{
         margin-left: 5.2vw;
     }
