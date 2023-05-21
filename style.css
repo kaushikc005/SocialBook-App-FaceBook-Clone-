@@ -858,29 +858,58 @@ color: #fff;
 
 /* Profile Section Media Query */
 
-@media (max-width:900px)
+@media (max-width:800px)
 {
-    .coverImg{
-        width: 98%;
-        flex-wrap: wrap;
-        
-    }
-    
-    .profileContainer{
-        padding:20px 10px;
-      
-        
-       
-    }
-    .profileContent{
-        flex-basis: 100%;
-    }
-        
-    .profileDetails
-    {
-        flex-wrap: wrap;
+
+    body{
+        overflow-x: hidden;
     }
 
+    .navbar{
+        width: 100%;
+    }
+
+    .navProfile > img{
+        margin-left: 10px;
+    }
+    .navList li img{
+        margin-right: 1.5rem;
+    }
+    .online{
+        margin-right: 40px;
+    }
+    .darkModeOn span{
+        margin-left: 5.2vw;
+    }
+    
+    .settingsMenu{
+        width: 95vw;
+    }
+    .coverImg{
+        width: 95%;
+        flex-wrap: wrap;
+        
+    }
+
+    .profileContainer{
+        padding: 10px; 
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .profileContent{
+        max-width: 95%;
+        flex-basis: 100%;
+       
+    } 
+    .profileDetails
+    {
+        max-width: 95%;
+        flex-wrap: wrap;
+    }
     .mutualFriendsImg{
         display: flex;
     }
@@ -888,6 +917,7 @@ color: #fff;
         width: 30px;
     }
     .profileDetailRight{
+        max-width: 95%;
         margin-top: 20px;
         text-align:start;
     }
@@ -896,9 +926,11 @@ color: #fff;
         margin-right: 10px;
     }
     .profileContent{
+        max-width: 100%;
         flex-wrap: wrap;
     }
     .profileLeft{
+        max-width: 100%;
         margin-right: 0;
     }
     .profileLeft hr{
@@ -909,24 +941,39 @@ color: #fff;
         color: #ccc;
     }
     .profileRight,.profileLeft{
+        
         flex-basis: 100%;
         flex-wrap: wrap;
+        padding: 10px;
+        margin-right: 10px;
+    }
+
+    .profileRight{
+        max-width: 99%;
+        padding: 0;
+    }
+    .writePostSection{
+        width: 100%;
+
     }
     .photoBox{
-        
         padding: 0 8px;
        flex-wrap: wrap;
        flex-basis: 100%;
+       justify-content: space-around;
     }
     .photoBox div img{
         width: 80px;
+    }
+    .friendListBox{
+        justify-content: space-around;
     }
     .friendListBox div img{
         width: 80px;
     }
    
     .photoBoxTitle{
-        padding: 10px 0;
+        padding: 10px;
     }
   
 }
